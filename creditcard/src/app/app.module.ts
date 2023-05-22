@@ -5,7 +5,6 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { CardFormComponent } from './card-form/card-form.component';
 import { InputComponent } from './input/input.component';
-import { NgxMaskDirective, NgxMaskPipe, provideNgxMask } from 'ngx-mask'
 
 @NgModule({
   declarations: [
@@ -16,9 +15,8 @@ import { NgxMaskDirective, NgxMaskPipe, provideNgxMask } from 'ngx-mask'
   imports: [
     BrowserModule,
     ReactiveFormsModule,
-    NgxMaskDirective, NgxMaskPipe
   ],
-  providers: [provideNgxMask()],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
